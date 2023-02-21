@@ -39,7 +39,7 @@ $('li.product-grid__item').each(function (i, elem) {
             name: name,
             image: image,
             price: price
-        }
+        };
         // Trim the spaces from each side of the price
         let priceTrim = price.trim();
         // Slice the string to remove the £
