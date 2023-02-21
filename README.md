@@ -22,5 +22,7 @@ Challenge 2
 1. cd challenge-2
 2. npm install
 3. npm run start
+4. A prompt will appear asking "What you would like to search?", Enter a term and the console will show the url requested 
+(The Whiskey Exchange throws a 403 error so what you enter isn't searched but the html for the beer search is loaded into cheerio to show the code works)
 
 This will produce a JSON file in the "challenge-2" folder called "challenge-2.json" which contains the output of the web scraper.
