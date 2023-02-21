@@ -82,7 +82,7 @@ axios.get('https://cdn.adimo.co/clients/Adimo/test/index.html')
         // console.log(scrapedDataJSON)
 
         // Writing the json file to local storage
-        fs.writeFile("webscraper.json", scrapedDataJSON, function (err) {
+        fs.writeFile("main-task.json", scrapedDataJSON, function (err) {
             if (err) {
                 return console.error(err);
             }
