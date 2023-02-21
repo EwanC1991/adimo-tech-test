@@ -37,20 +37,20 @@ $('li.product-grid__item').each(function (i, elem) {
         // Convert the string into a float
         let priceFloat = parseFloat(priceSlice);
         // Check price is correct
-        console.log(priceFloat);
+        // console.log(priceFloat);
         // Push price into allPrices list
         allPrices.push(priceFloat);
 
         // Adding the scraped data object to the items list
         items.push(item);
     }
-})
+});
 
 // Add all the prices together to get the total value of all the items
 let totalValue = allPrices.reduce((sum, a) => sum + a, 0);
 
 // Check total value
-console.log(`Total Value: ${totalValue}`);
+// console.log(`Total Value: ${totalValue}`);
 
 // Calculate average price
 let averagePrice = totalValue / items.length;
@@ -63,13 +63,13 @@ const scrapedData = {
 };
 
 // Check Scraped Data is correct
-console.log(scrapedData);
+// console.log(scrapedData);
 
 // Converting the scraped data object into JSON
 const scrapedDataJSON = JSON.stringify(scrapedData);
 
 // Console Log the final JSON output
-console.log(scrapedDataJSON);
+// console.log(scrapedDataJSON);
 
 // Writing the json file to local storage, this will be overwritten each time the scraper is used
 fs.writeFile("challenge-1.json", scrapedDataJSON, function (err) {
