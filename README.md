@@ -5,11 +5,11 @@ Here is my attempt at the Adimo Tech Test
 To run the projects, enter these commands into the terminal.
 
 Main Task
-1. cd web-scraper-nodejs
+1. cd main-task
 2. npm install
 3. npm run start
 
-This will produce a JSON file in the "web-scraper-nodejs" folder called "webscraper.json" which contains the output of the web scraper.
+This will produce a JSON file in the "main-task" folder called "main-task.json" which contains the output of the web scraper.
 
 Challenge 1
 1. cd challenge-1
