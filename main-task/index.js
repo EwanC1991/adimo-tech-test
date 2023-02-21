@@ -81,7 +81,7 @@ axios.get('https://cdn.adimo.co/clients/Adimo/test/index.html')
         // Console Log the final JSON output
         // console.log(scrapedDataJSON)
 
-        // Writing the json file to local storage
+        // Writing the json file to local storage, this will be overwritten each time the scraper is used
         fs.writeFile("main-task.json", scrapedDataJSON, function (err) {
             if (err) {
                 return console.error(err);

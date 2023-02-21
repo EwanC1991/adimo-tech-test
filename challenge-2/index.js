@@ -81,7 +81,7 @@ const scrapedDataJSON = JSON.stringify(scrapedData);
 // Console Log the final JSON output
 console.log(scrapedDataJSON);
 
-// Writing the json file to local storage
+// Writing the json file to local storage, this will be overwritten each time the scraper is used
 fs.writeFile("challenge-2.json", scrapedDataJSON, function (err) {
     if (err) {
         return console.error(err);
