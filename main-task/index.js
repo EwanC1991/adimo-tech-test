@@ -69,7 +69,7 @@ axios.get('https://cdn.adimo.co/clients/Adimo/test/index.html')
         const scrapedData = {
             items: items,
             totalItems: items.length,
-            averagePrice: "£" + averagePrice.toFixed(2)
+            averagePrice: `£${averagePrice.toFixed(2)}`
         };
 
         // Check Scraped Data is correct
